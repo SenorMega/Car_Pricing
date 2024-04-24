@@ -41,3 +41,19 @@ The least important attributes are
 8. Drivetrain       2.3%
 9. Condition        0.7%
 10. Title status    0.4%
+
+### Deployment
+
+The nice thing about ranking the attributes by importance is that we can pass this information to each client and instruct them how to apply and tailor it to their own specific markets. The important thing for them to remember is that one-hot encoding shows that the column is important, but it does not mean that a higher number for that attribute is better. Their job is to itentify the preferences of their particluar market for each preferred attribute, and aim to purchase cars for resale that have strong scores in their markets preferred range for that attribute.
+
+As a general example, we know that the number of cylinders a car has is one of the most important factors in determining its price. That said, customers at a dealership in a rural area may prefer 8-cylinder engines and customers in a urban area may prefer 4-cylinder engines. All our model tell us is that getting cars with this number right will appeal more to buyers than getting the condition right, but it doesn't necessarily tell us what the right number (or condition) is in their particular market. 
+
+Overall, dealers should generally make more money on their used car sales if they:
+
+1. Purchase cars that perform well in the important categories. Let's just call these "good cars".
+
+2. Try to purchase "hidden gems". These are cars that are strong in the most important attributes but poor in less important categories. An example would be a newer car with low mileage that is in poor condition.
+
+3. Try to purchase "fixer-uppers" at a low price. These are cars that perform poorly in unimportant categories but still perform ok in relevant categories. For these cars, they are worth buying at a good price and it is worth making an offer under the asking price. An example of this would be a car that is in very poor condition but is only 5 years old.
+
+4. Avoid purchasing "false hope" cars. These perform well in unimportant categories but they do not do well in important categories. An example would be a car that is in good condition from a luxury manufacturer, but it has high mileage or is old. 
