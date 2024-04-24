@@ -26,7 +26,7 @@ For pricing, the square root of the MSE score is approximately $8950. Comparing 
 
 On the other hand, the model was able to determine which attributes are the most important contributors to the car's price. This is very useful information and each potential client will be able to use it to determine how to tailor their pricing to their own particular market. Here are the attributes ranked:
 
-The most important attributes are
+From my Ridge Regression model, the most important attributes are
 
 1. Odometer         29.3%
 2. Year             10.2%
